@@ -32,6 +32,7 @@ RUN docker-php-ext-install \
   pcntl \
   pdo_mysql \
   soap \
+  sockets \
   xsl \
   zip \
   sockets
