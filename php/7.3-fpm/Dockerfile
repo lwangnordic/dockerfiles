@@ -1,5 +1,6 @@
-FROM php:7.2-fpm
-MAINTAINER Juan Alonso <juan.jalogut@gmail.com>
+FROM php:7.3-fpm
+
+LABEL authors="Daniel Lozano <dn.lozano.m@gmail.com>, Juan Alonso <juan.jalogut@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   cron \
@@ -11,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libmcrypt-dev \
   libpng-dev \
   libxslt1-dev \
+  libzip-dev \
   lsof \
   mariadb-client \
   vim \
